@@ -1,0 +1,7 @@
+int sum=0;
+        int n=ar.size();
+        for(int i=0; i<n; i++){
+            sum=sum+ar.get(i);
+        }
+        return sum;
+        
