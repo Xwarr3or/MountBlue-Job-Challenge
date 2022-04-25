@@ -1,1 +1,15 @@
-lorem ipsum
+int count=0;
+        for(int i=0; i<n; i++){
+            if(ar.get(i) != 0)
+            {
+                for(int j=i+1; j<n; j++){
+                    if(ar.get(i) == ar.get(j))
+                    {
+                        count++;
+                        ar.set(j, 0);
+                        break;
+                    }
+                }
+            }
+        }
+        return count;
