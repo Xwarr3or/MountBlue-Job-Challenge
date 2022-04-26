@@ -1,1 +1,20 @@
-
+int firstMax=scores.get(0);
+        int firstMin=scores.get(0);
+        
+        int maxCount=0;
+        int minCount=0;
+        
+        for(int i:scores){
+            if(i>firstMax){
+                maxCount++;
+                firstMax=i;
+            }
+            if(i<firstMin){
+                minCount++;
+                firstMin=i;
+            }
+        }
+        ArrayList<Integer> arlst = new ArrayList<>();
+        arlst.add(maxCount);
+        arlst.add(minCount);
+        return arlst;
